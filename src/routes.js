@@ -7,7 +7,7 @@ import Home from "./views/pages/Home";
 import Jobs from "./views/pages/Jobs";
 import RecruitmentProcess from "./views/pages/RecruitmentProcess";
 import Services from "./views/pages/Services";
-import WeProvide from "./views/pages/WeProvide";
+
 
 const routeObjs = {
 
@@ -18,7 +18,7 @@ const routeObjs = {
     { path: "/about-us", component: AboutUs },
     { path: "/contact-us", component: ContactUs },
     { path: "/services", component: Services },
-    { path: "/we-provide", component: WeProvide },
+
     { path: "/recruitment-process", component: RecruitmentProcess },
     { path: "/advertisements", component: Advertisement },
 
