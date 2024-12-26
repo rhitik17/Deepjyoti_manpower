@@ -1,0 +1,88 @@
+const weProvideData = [
+    {
+      title: "Super Market",
+      details: [
+        "Doctors",
+        "Admin Officer",
+        "Warden",
+        "Pharmacists",
+        "Nurse (Male/Female)",
+        "Accountant",
+        "Store Keeper",
+        "Cashier",
+      ],
+      image: "/images/plane.jpg",
+    },
+    {
+      title: "Education Services",
+      details: [
+        "Teacher",
+        "Principal",
+        "Librarian",
+        "Lab Assistant",
+        "Counselor",
+        "Administrative Staff",
+        "Curriculum Developer",
+        "Examiner",
+      ],
+      image: "/images/plane.jpg",
+    },
+    {
+      title: "Construction Work",
+      details: [
+        "Mason",
+        "Electrician",
+        "Plumber",
+        "Carpenter",
+        "Welder",
+        "Architect",
+        "Engineer",
+        "Foreman",
+      ],
+      image: "/images/plane.jpg",
+    },
+    {
+      title: "Hospitality Services",
+      details: [
+        "Chef",
+        "Waiter",
+        "Receptionist",
+        "Housekeeper",
+        "Event Manager",
+        "Bartender",
+        "Concierge",
+        "Tour Guide",
+      ],
+      image: "/images/plane.jpg",
+    },
+    {
+      title: "IT Solutions",
+      details: [
+        "Software Developer",
+        "System Administrator",
+        "Data Analyst",
+        "UX Designer",
+        "Project Manager",
+        "Tech Support",
+        "Cybersecurity Analyst",
+        "Cloud Engineer",
+      ],
+      image: "/images/plane.jpg",
+    },
+    {
+      title: "Transportation Services",
+      details: [
+        "Driver",
+        "Mechanic",
+        "Logistics Manager",
+        "Dispatcher",
+        "Warehouse Worker",
+        "Delivery Person",
+        "Fleet Manager",
+        "Transport Planner",
+      ],
+      image: "/images/plane.jpg",
+    },
+  ];
+
+  export default weProvideData;

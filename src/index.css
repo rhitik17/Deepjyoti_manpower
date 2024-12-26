@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes scroll-gallery {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-scroll {
+    display: flex;
+    animation: scroll-gallery 20s linear infinite;
+  }
+
+
+  /* to hide scrollbar */
+  .scrollbar-hide::-webkit-scrollbar {
+     display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* For IE and Edge */
+    scrollbar-width: none; /* For Firefox */
+  }
