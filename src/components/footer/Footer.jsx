@@ -4,8 +4,8 @@ import { configData as config } from "../../data/configData";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-primary-web pt-16 px-8 lg:px-20">
-      <div className="grid max-md:gap-y-14 md:grid-cols-2 lg:grid-cols-4 md:gap-20 ">
+    <footer className="w-full bg-primary-web pt-16 px-8 lg:px-12">
+      <div className="grid max-md:gap-y-14 md:grid-cols-2 lg:grid-cols-4 md:gap-20 lg:max-xl:gap-10">
         {/* Left Section - Logo and Description */}
         <div className="flex flex-col items-start gap-4 max-w-xs">
           <img
@@ -94,13 +94,13 @@ const Footer = () => {
           <h4 className="text-white text-xl font-medium uppercase font-inter">
             Contact Us
           </h4>
-          <div className="text-white font-helvetica space-y-4">
+          <div className="w-full text-white font-helvetica space-y-4">
             <p className="text-base flex gap-x-2">
               {" "}
               <img src="/images/location.svg" alt="" />
               {config.address ? config.address : "    Samakhusi-29, Kathmandu"}
             </p>
-            <p className="text-base flex gap-x-2">
+            <p className="text-base flex overflow-auto  gap-x-2">
               {" "}
               <img src="/images/mail.svg" alt="" />
               {config.emails ? config.emails[0] : " info@alnooroverseas.com"}

@@ -22,9 +22,9 @@ const AboutUs = () => {
   return (
     <section className="w-full flex flex-col  ">
       {/* title and image section */}
-      <div className="w-full px-4 lg:px-20 pt-10 md:pt-20 xl:pt-0">
+      <div className="w-full px-4 lg:px-20 pt-10 md:pt-20 xl:pt-10 ">
         <div className="w-full flex flex-col lg:flex-row justify-between items-center">
-          <div className="w-full lg:w-5/12 xl:w-5/12 mb-8 lg:mb-0">
+          <div className="w-full lg:w-5/12 xl:w-6/12 mb-8 lg:mb-8 xl:mb-0">
             {/* <AboutUsTitle /> */}
             <RedTitleTextCard
               title="About us"
@@ -33,14 +33,14 @@ const AboutUs = () => {
             />
           </div>
 
-          <div className="relative hidden md:flex items-center pr-1 w-full md:w-auto">
+          <div className="lg:w-7/12 xl:w-6/12 relative hidden md:flex items-end justify-end  pr-1 w-full md:w-auto">
             {/* Background Circle */}
-            <div className="absolute w-[643px] h-[604px] bg-primary-web rounded-full top-40 right-0 md:right-0 md:w-[500px] md:h-[500px] sm:w-[350px] sm:h-[350px]" />
+            <div className="absolute w-[643px] h-[604px] bg-primary-purple/60 rounded-full top-32 right-0 md:right-[20] md:w-[500px] md:h-[500px] sm:w-[350px] sm:h-[350px]" />
             {/* Image */}
             <img
-              src="/images/businessWomen.png"
+              src="/images/women.svg"
               alt="Business Woman"
-              className="relative z-8 w-[750px] h-[750px] pr-2 lg:w-[750px] lg:h-[750px] md:w-[500px] md:h-[500px] sm:w-[350px] sm:h-[350px]"
+              className="relative z-8 pr-2  "
             />
           </div>
         </div>
