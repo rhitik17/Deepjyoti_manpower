@@ -1,6 +1,5 @@
 import React from "react";
 import CompanyCard from "./CompanyCard";
-// import companies from '../../data/Companies';
 
 const TopCompanies = (companies) => {
   return (
@@ -15,9 +14,9 @@ const TopCompanies = (companies) => {
         </div>
       </div>
       <div className=" w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {companies.companies.map((company) => (
+        {companies.companies.map((company, index) => (
           <CompanyCard
-            key={company.id}
+            key={index}
             name={company.name}
             icon={company.logo}
             description={company.description}

@@ -1,33 +1,27 @@
 import React from "react";
 import Hero from "../../components/jobs/Hero";
-import Logos from "../../components/jobs/Logos";
 import BrowseByCategory from "../../components/jobs/BrowseByCategory";
 import TopCompanies from "../../components/jobs/TopCompany";
 import Testimonials from "../../components/jobs/TestimonialsFromCustomer";
 import BannerSection from "../../components/jobs/Banner";
 import { jobData } from "../../data/jobData";
+import categories from "../../data/browseByCategory";
+import companies from "../../data/Companies";
+import testimonials from "../../data/testimonialsFromCustomers";
 
 const Jobs = () => {
-
-const { recent_jobs, categories, top_companies, testimonials} = jobData;
   return (
     <div className="flex flex-col ">
-      <section>
+      {/* <section>
         <Hero data={jobData} />
-      </section>
-
-      <section className="pt-10">
-        <Logos />
-      </section>
-
-    
+      </section> */}
 
       <section className="">
         <BrowseByCategory categories={categories} />
       </section>
 
       <section>
-        <TopCompanies companies={top_companies} />
+        <TopCompanies companies={companies} />
       </section>
 
       <section>

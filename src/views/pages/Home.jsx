@@ -27,6 +27,8 @@ const Home = () => {
     },
   ];
 
+  
+
   return (
     <>
       <section className="py-8">
