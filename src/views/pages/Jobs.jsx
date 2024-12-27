@@ -24,7 +24,7 @@ const Jobs = () => {
         <TopCompanies companies={companies} />
       </section>
 
-      <section>
+      <section className="bg-primary-web">
         <Testimonials testimonials={testimonials} />
       </section>
 

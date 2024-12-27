@@ -3,7 +3,7 @@ import JobCategoryCard from "./JobCategoryCard";
 
 const BrowseByCategory = ({ categories }) => {
   return (
-    <div className="w-full px-4 md:px-8 lg:px-10 xl:px-20 pt-14 pb-28 bg-secondary-teal/10 flex-col justify-start items-center gap-14 inline-flex">
+    <div className="w-full px-4 md:px-8 lg:px-10 xl:px-20 py-16 bg-secondary-teal/10 flex-col justify-start items-center gap-14 inline-flex">
       <div className="flex-col justify-center items-center text-center gap-10 flex">
         <div className="text-center text-black text-5xl font-bold">
           Job Categories
