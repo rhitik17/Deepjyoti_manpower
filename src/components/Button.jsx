@@ -10,7 +10,7 @@ const Button = ({
   text,
 }) => {
   const variantStyles = {
-    primary: "bg-primary-web hover:bg-gray-500 text-white",
+    primary: "bg-primary-web hover:scale-105 hover:border-primary-purple hover:border-2 text-primary-yellow",
     secondary: "bg-secondary-blue hover:bg-gray-600 text-white",
     danger: "bg-status-danger hover:bg-red-600 text-white",
     success: "bg-status-success hover:bg-green-600 text-white",

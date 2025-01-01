@@ -11,6 +11,8 @@ import ExecutiveSummary from "../../components/aboutUs/ExecutiveSummary";
 import MissionVisionServiceCard from "../../components/aboutUs/MissionVisionServiceCard";
 import Icons from "../../icons";
 import FAQ from "../../components/contactUs/FAQ";
+import MissionSection from "./OurMission";
+import MissionComponent from "./OurMission";
 
 const AboutUs = () => {
   const { TargetIcon, EyeIcon } = Icons;
@@ -41,6 +43,7 @@ const AboutUs = () => {
               src="/images/women.svg"
               alt="Business Woman"
               className="relative z-8 pr-2  "
+              loading="lazy"
             />
           </div>
         </div>
@@ -49,14 +52,14 @@ const AboutUs = () => {
       {/* executive summary */}
       <div className="w-full relative z-8 flex flex-col items-center ">
         <ExecutiveSummary />
-        <div className="absolute hidden md:flex md:bottom-[-35%] lg:bottom-[-60%] xl:bottom-[-45%]  items-center justify-center">
+        {/* <div className="absolute hidden md:flex md:bottom-[-35%] lg:bottom-[-60%] xl:bottom-[-45%]  items-center justify-center">
           <img src="/images/group.png" alt="" className="" />
-        </div>
+        </div> */}
       </div>
 
-        <div className="w-full h-[100px] md:h-[400px] lg:h-[550px]"></div>
+        <div className="w-full  h-[10px] md:h-[40px] lg:h-[50px]"></div>
       {/* contact Us */}
-      {/* <div className="w-full flex items-center justify-center">
+      <div className="w-full flex items-center justify-center">
         <Button
           label={
             <>
@@ -74,7 +77,7 @@ const AboutUs = () => {
           text="extraLarge"
           onClick={handleContactClick}
         />
-      </div> */}
+      </div>
 
       {/* company services */}
       {/* <div className="relative  w-full flex py-36 px-20 justify-between items-center space-x-20">
@@ -95,7 +98,13 @@ const AboutUs = () => {
       </div> */}
 
       {/* mission vision and service card section */}
+<div className="py-10">
+<MissionComponent/>
+</div>
+
       <div className="flex justify-center flex-wrap gap-10 px-4 md:px-8 lg:px-10 xl:px-20 py-8 xl:py-20">
+
+
         <MissionVisionServiceCard
           icon={TargetIcon}
           title="Mission"
@@ -110,12 +119,7 @@ const AboutUs = () => {
           onClick={() => console.log("Card clicked!")}
         />
 
-        <MissionVisionServiceCard
-          icon={EyeIcon}
-          title="Service"
-          description="We provide smart packages of recruitment solution, training programs and consultation services in the different levels of management"
-          onClick={() => navigate("/services")}
-        />
+       
       </div>
 
       {/* Chairman's statement */}

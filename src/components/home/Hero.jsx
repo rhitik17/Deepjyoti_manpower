@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -19,12 +20,14 @@ const HeroSection = () => {
       </div>
 
       {/* Explore Service Button */}
-      <div className="absolute left-1/2 transform -translate-x-1/2    top-[300px] md:top-[392px] flex items-center gap-2 px-4 py-3 md:px-5 md:py-4 rounded-lg border border-white cursor-pointer">
+     <Link to={"/services"}>
+     <div className="absolute left-1/2 transform -translate-x-1/2    top-[300px] md:top-[392px] flex items-center gap-2 px-4 py-3 md:px-5 md:py-4 rounded-lg border border-white cursor-pointer">
         <span className="text-sm md:text-base font-semibold font-inter text-white ">
           Explore Services
         </span>
         <img src="/images/arrow-right.svg" alt="" />
       </div>
+     </Link>
 
       {/* Discover More Button
       <button className="absolute left-1/2 transform -translate-x-1/2 md:left-[25%] lg:left-[480px] md:transform-none top-[250px] md:top-[377px] px-4 py-3 md:px-5 md:py-4 bg-primary-green rounded-lg flex justify-center items-center text-white text-sm md:text-base font-semibold font-inter">
