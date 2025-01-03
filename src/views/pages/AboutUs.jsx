@@ -4,15 +4,17 @@ import CompanyHighlights from "../../components/aboutUs/ExecutiveSummary";
 import Button from "../../components/Button";
 import ServicesCard from "../../components/aboutUs/ServicesCard";
 import ServicesTitle from "../../components/aboutUs/ServicesTitle";
-import ChairmanWords from "../../components/aboutUs/ChairmanWords";
+import ChairmanWords from "../../components/aboutUs/Carousel";
 import { useNavigate } from "react-router-dom";
 import RedTitleTextCard from "../../components/common/RedTitleTextCard";
 import ExecutiveSummary from "../../components/aboutUs/ExecutiveSummary";
 import MissionVisionServiceCard from "../../components/aboutUs/MissionVisionServiceCard";
 import Icons from "../../icons";
 import FAQ from "../../components/contactUs/FAQ";
-import MissionSection from "./OurMission";
-import MissionComponent from "./OurMission";
+import MissionSection from "./ourMission";
+import MissionComponent from "./ourMission";
+import Carousel from "../../components/aboutUs/Carousel";
+import Slider from "../../components/aboutUs/Carousel";
 
 const AboutUs = () => {
   const { TargetIcon, EyeIcon } = Icons;
@@ -52,12 +54,9 @@ const AboutUs = () => {
       {/* executive summary */}
       <div className="w-full relative z-8 flex flex-col items-center ">
         <ExecutiveSummary />
-        {/* <div className="absolute hidden md:flex md:bottom-[-35%] lg:bottom-[-60%] xl:bottom-[-45%]  items-center justify-center">
-          <img src="/images/group.png" alt="" className="" />
-        </div> */}
       </div>
 
-        <div className="w-full  h-[10px] md:h-[40px] lg:h-[50px]"></div>
+      <div className="w-full  h-[10px] md:h-[40px] lg:h-[50px]"></div>
       {/* contact Us */}
       <div className="w-full flex items-center justify-center">
         <Button
@@ -98,13 +97,11 @@ const AboutUs = () => {
       </div> */}
 
       {/* mission vision and service card section */}
-<div className="py-10">
-<MissionComponent/>
-</div>
+      <div className="py-10">
+        <MissionComponent />
+      </div>
 
       <div className="flex justify-center flex-wrap gap-10 px-4 md:px-8 lg:px-10 xl:px-20 py-8 xl:py-20">
-
-
         <MissionVisionServiceCard
           icon={TargetIcon}
           title="Mission"
@@ -118,29 +115,13 @@ const AboutUs = () => {
           description="Providing superior professional quality through an experienced staff to meet the actual needs of our client’s business in Egypt and the Gulf region."
           onClick={() => console.log("Card clicked!")}
         />
-
-       
       </div>
 
       {/* Chairman's statement */}
       <div className="bg-primary-green px-4 md:px-8 lg:px-10 xl:px-20 py-8 xl:py-20">
-        <ChairmanWords />
+        {/* <ChairmanWords /> */}
+        <Slider/>
       </div>
-
-      {/* executive summary */}
-      {/* <div className="w-full px-20 py-40 flex justify-between items-center space-x-4 ">
-        <div>
-          <ServicesTitle />
-        </div>
-        <div className="flex gap-x-4">
-          <ServicesCard />
-          <ServicesCard />
-        </div>
-      </div> */}
-
-      {/* <div className="pt-16 px-4 md:px-8 lg:px-10 xl:px-20 py-8 xl:py-20">
-        <FAQ />
-      </div> */}
 
       <div className="h-96"></div>
     </section>

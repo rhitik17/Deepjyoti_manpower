@@ -11,7 +11,7 @@ const MissionComponent = () => {
         <p className="text-black text-xl text-center">
           “DELIVERING EXCELLENCE TO INDIVIDUALS, BUSINESS, AND COMMUNITIES.”
         </p>
-        <p className="text-black  text-lg text-center  leading-relaxed w-6/12">
+        <p className="text-black  text-lg text-center  leading-relaxed lg:w-6/12">
           Our mission statement reflects our commitment to offering the highest
           quality service to our clients, candidates, and all the other
           stakeholders we work with. It demonstrates how we continually strive
@@ -26,7 +26,7 @@ const MissionComponent = () => {
         <h3 className="text-primary-purple text-3xl font-semibold font-roboto text-center">
           Our Guarantee
         </h3>
-        <p className="text-black text-lg text-center leading-relaxed w-6/12">
+        <p className="text-black text-lg text-center leading-relaxed lg:w-6/12">
           We undertake to repatriate at our own expense if any candidate
           deployed by DEEPJYOTI MANPOWER SERVICE is found professionally or
           medically unfit or refuses to work as specified by the company within
@@ -41,7 +41,7 @@ const MissionComponent = () => {
         <h3 className="text-primary-purple text-3xl font-semibold font-roboto text-center">
           Our Vision
         </h3>
-        <p className="text-black text-xl text-center w-6/12 ">
+        <p className="text-black text-xl text-center lg:w-6/12 ">
           “TO DELIVER WORLD-CLASS PROFESSIONAL RECRUITMENT SOLUTIONS TO
           EMPLOYERS & JOB SEEKERS IN EVERY RANGE OF DISCIPLINE.”
         </p>

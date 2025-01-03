@@ -27,8 +27,6 @@ const Home = () => {
     },
   ];
 
-  
-
   return (
     <>
       <section className="py-8">
@@ -65,23 +63,22 @@ const Home = () => {
           </div>
         </div>
 
-          {/* insights
+        {/* insights
           <div>
             <Insights />
           </div> */}
-          {/* latest news cards */}
-          {/* <div className="w-full flex">
+        {/* latest news cards */}
+        {/* <div className="w-full flex">
             <LatestNews />
           </div> */}
-    
-    <div className="pt-2">
-    <SucessStories />
-    </div>
-       
+
+        <div className="pt-2">
+          <SucessStories />
+        </div>
 
         {/* partners */}
         <div className="py-20">
-          <TrustedPartners/>
+          <TrustedPartners />
         </div>
       </section>
     </>

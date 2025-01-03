@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 import { distinctRoutes } from "./routes";
-import PageNotFound from "./views/PageNotFound";
+import PageNotFound from "./views/404";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import ScrollToTop from "./scrollToTop";
