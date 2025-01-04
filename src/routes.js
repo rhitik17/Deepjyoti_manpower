@@ -1,12 +1,12 @@
 
-import AboutUs from "./views/pages/aboutUs";
-import Advertisement from "./views/pages/advertisement";
-import CompanyProfile from "./views/pages/companyProfile";
-import ContactUs from "./views/pages/contactUs";
-import Home from "./views/pages/home";
-import Jobs from "./views/pages/jobs";
-import RecruitmentProcess from "./views/pages/recruitmentProcess";
-import Services from "./views/pages/services";
+import AboutUs from "./views/pages/aboutUs.jsx";
+import Advertisement from "./views/pages/advertisement.jsx";
+import CompanyProfile from "./views/pages/companyProfile.jsx";
+import ContactUs from "./views/pages/contactUs.jsx";
+import Home from "./views/pages/home.jsx";
+import Jobs from "./views/pages/jobs.jsx";
+import RecruitmentProcess from "./views/pages/recruitmentProcess.jsx";
+import Services from "./views/pages/services.jsx";
 
 const routeObjs = {
   Main: [
