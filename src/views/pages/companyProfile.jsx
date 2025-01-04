@@ -49,7 +49,7 @@ const CompanyProfile = () => {
       <h2 className="text-primary-purple text-4xl font-bold font-roboto text-center">
         Company Profile
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-10">
         {companyData.map((item, index) => (
           <div
             key={index}

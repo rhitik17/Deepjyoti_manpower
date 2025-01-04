@@ -40,11 +40,11 @@ const SuccessStories = () => {
   ];
 
   return (
-    <div className="w-full px-4 md:px-8 lg:px-10 xl:px-20 py-20 bg-white flex justify-start items-center font-inter">
-      <div className="w-full flex flex-col gap-12">
+    <div className="w-full px-4 md:px-8 lg:px-10 xl:px-20 py-20 bg-white flex justify-center lg:justify-start items-center font-inter">
+      <div className="w-full flex flex-col gap-8 lg:gap-12">
         <div className="w-full flex flex-col gap-4">
-          <div className="w-full flex flex-col justify-center items-center ">
-            <h2 className="text-primary-web  text-5xl font-semibold">Success Stories</h2>
+          <div className="w-full flex flex-col justify-center max-lg:text-center items-center ">
+            <h2 className="text-primary-web  text-3xl md:text-4xl lg:text-5xl font-semibold">Success Stories</h2>
            
           </div>
           

@@ -45,7 +45,7 @@ const Home = () => {
 
           {/* Professional card and about card */}
 
-          <div className="w-full mt-8 py-24 flex max-lg:flex-col items-center justify-between gap-24 ">
+          <div className="w-full mt-8 lg:py-24 flex max-lg:flex-col items-center justify-between gap-24 ">
             <motion.div
               className="w-full lg:w-8/12 space-y-20 "
               initial="hidden"
@@ -72,7 +72,7 @@ const Home = () => {
             </motion.div>
           
               <motion.div
-                    className="w-full lg:w-4/12 "
+                    className="w-full h-auto lg:w-4/12 "
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -92,7 +92,7 @@ const Home = () => {
             <LatestNews />
           </div> */}
 
-        <div className="pt-2">
+        <div className="pt-2 max-lg:justify-center">
           <SucessStories />
         </div>
 

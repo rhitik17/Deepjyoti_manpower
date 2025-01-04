@@ -55,7 +55,7 @@ const AboutUs = () => {
         <ExecutiveSummary />
       </div>
 
-      <div className="w-full  h-[10px] md:h-[40px] lg:h-[50px]"></div>
+      <div className="w-full  h-[30px] md:h-[40px] lg:h-[50px]"></div>
       {/* contact Us */}
       <div className="w-full flex items-center justify-center">
         <Button
@@ -96,7 +96,7 @@ const AboutUs = () => {
       </div> */}
 
       {/* mission vision and service card section */}
-      <div className="py-10">
+      <div className="py-6 lg:py-10">
         <MissionComponent />
       </div>
 

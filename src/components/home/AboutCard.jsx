@@ -1,27 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import RedTitleTextCard from "../common/RedTitleTextCard";
 
 const AboutCard = () => {
   return (
-    <div className="w-full  flex flex-col justify-start items-start gap-10">
-      <div className="w-full flex flex-col items-end gap-2">
-        {/* Title Section */}
-        <div className="w-full flex flex-col items-start gap-3">
-          <div className="text-primary-purple text-2xl font-bold font-inter">
-            About
-          </div>
-          <div className="text-primary-green text-4xl font-bold font-roboto">
-            DeepJyoti Manpower Service
-          </div>
-        </div>
-
-        {/* Description Section */}
-        <p className="w-full text-[#333333] text-lg font-normal font-roboto text-justify">
-          It is a long established fact that a reader will be
-          <br />
-          distracted by the readable content of a page.
-        </p>
-      </div>
+    <div className="w-full  flex flex-col  justify-center items-center lg:justify-start lg:items-start gap-10">
+    <RedTitleTextCard 
+    title={"About"}
+    headline={"DeepJyoti manpower Service"}
+    description="It is a long established fact that a reader will be distracted by the redable content of a page"
+    />
 
       {/* Button Section */}
       <Link to={"/about-us"}>

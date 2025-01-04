@@ -20,7 +20,7 @@ const Services = () => {
       </div>
 
       {/* services card area */}
-      <div className="py-16 space-y-32">
+      <div className="py-16 space-y-16 md:space-y-20 lg:space-y-32">
       {serviceCardData.map((data, index) => (
         <ServiceCard
           key={index}
