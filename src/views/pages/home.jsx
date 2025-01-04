@@ -47,7 +47,7 @@ const Home = () => {
 
           <div className="w-full mt-8 py-24 flex max-lg:flex-col items-center justify-between gap-24 ">
             <motion.div
-              className="lg:w-8/12 space-y-20 "
+              className="w-full lg:w-8/12 space-y-20 "
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -72,7 +72,7 @@ const Home = () => {
             </motion.div>
           
               <motion.div
-                    className="lg:w-4/12 "
+                    className="w-full lg:w-4/12 "
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
