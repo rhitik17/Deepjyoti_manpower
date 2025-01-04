@@ -11,8 +11,8 @@ import ExecutiveSummary from "../../components/aboutUs/ExecutiveSummary";
 import MissionVisionServiceCard from "../../components/aboutUs/MissionVisionServiceCard";
 import Icons from "../../icons";
 import FAQ from "../../components/contactUs/FAQ";
-import MissionSection from "./ourMission";
-import MissionComponent from "./ourMission";
+import MissionComponent from "../../components/aboutUs/OurMission";
+import MissionComponent from "../../components/aboutUs/OurMission";
 import Carousel from "../../components/aboutUs/Carousel";
 import Slider from "../../components/aboutUs/Carousel";
 
