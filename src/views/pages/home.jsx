@@ -8,7 +8,7 @@ import SucessStories from "../../components/home/SucessStories";
 import Insights from "../../components/home/Insights";
 import TrustedPartners from "../../components/home/TrustedPartners";
 import { motion } from "framer-motion";
-import { slideFromLeft,  } from "../../utils";
+import { slideFromLeft, slideFromRight } from "../../utils";
 
 const Home = () => {
   const supports = [
@@ -71,13 +71,15 @@ const Home = () => {
             
             </motion.div>
           
-              <div
-                  
+              <motion.div
+                    className="lg:w-4/12 "
                     initial="hidden"
-                   
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    variants={slideFromRight}
                   >
               <AboutCard />
-            </div>
+            </motion.div>
           </div>
         </div>
 

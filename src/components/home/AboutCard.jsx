@@ -1,17 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { slideFromRight } from "../../utils";
-import { motion } from "framer-motion";
 
 const AboutCard = () => {
   return (
-    <motion.div
-      className="w-full  flex flex-col justify-start items-start gap-10"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }}
-      variants={slideFromRight}
-    >
+    <div className="w-full  flex flex-col justify-start items-start gap-10">
       <div className="w-full flex flex-col items-end gap-2">
         {/* Title Section */}
         <div className="w-full flex flex-col items-start gap-3">
@@ -39,7 +31,7 @@ const AboutCard = () => {
           </span>
         </div>
       </Link>
-    </motion.div>
+    </div>
   );
 };
 
