@@ -12,7 +12,7 @@ const MissionComponent = () => {
         className="w-full space-y-6 flex flex-col justify-center items-center"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         variants={slideFromLeft}
       >
         <h2 className="text-primary-purple text-4xl font-bold font-roboto text-center">
@@ -51,7 +51,7 @@ const MissionComponent = () => {
         className="w-full space-y-6 flex flex-col justify-center items-center"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         variants={slideFromRight}
       >
         <h3 className="text-primary-purple text-3xl font-semibold font-roboto text-center">
