@@ -1,11 +1,11 @@
 
-import AboutUs from "./views/pages/aboutUs.jsx";
+import AboutUs from "./views/pages/aboutus.jsx";
 import Advertisement from "./views/pages/advertisement.jsx";
 import CompanyProfile from "./views/pages/companyProfile.jsx";
-import ContactUs from "./views/pages/contactUs.jsx";
+import ContactUs from "./views/pages/contactus.jsx";
 import Home from "./views/pages/home.jsx";
 import Jobs from "./views/pages/jobs.jsx";
-import RecruitmentProcess from "./views/pages/recruitmentProcess.jsx";
+import RecruitmentProcess from "./views/pages/recruitmentprocess.jsx";
 import Services from "./views/pages/services.jsx";
 
 const routeObjs = {
