@@ -12,7 +12,6 @@ import MissionVisionServiceCard from "../../components/aboutUs/MissionVisionServ
 import Icons from "../../icons";
 import FAQ from "../../components/contactUs/FAQ";
 import MissionComponent from "../../components/aboutUs/OurMission";
-import MissionComponent from "../../components/aboutUs/OurMission";
 import Carousel from "../../components/aboutUs/Carousel";
 import Slider from "../../components/aboutUs/Carousel";
 
