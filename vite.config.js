@@ -7,24 +7,8 @@ export default defineConfig({
   server: {
     host: true,
   },
-  build: {
-    rollupOptions: {
-      external: ['framer-motion'],
-    },
-  },
+  
 })
 
 
-// import { defineConfig } from 'vite';
 
-// export default defineConfig({
-//   server: {
-//     proxy: {
-//       '/api': {
-//         target: 'https://alnoor-be-production.up.railway.app/api/v1/', // Your API base URL
-//         changeOrigin: true,
-//         rewrite: (path) => path.replace(/^\/api/, ''),
-//       },
-//     },
-//   },
-// });
