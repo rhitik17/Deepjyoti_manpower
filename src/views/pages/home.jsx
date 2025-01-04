@@ -7,6 +7,8 @@ import LatestNews from "../../components/home/Latestnews";
 import SucessStories from "../../components/home/SucessStories";
 import Insights from "../../components/home/Insights";
 import TrustedPartners from "../../components/home/TrustedPartners";
+import { motion } from "framer-motion";
+import { slideFromLeft, slideFromRight } from "../../utils";
 
 const Home = () => {
   const supports = [
@@ -27,6 +29,8 @@ const Home = () => {
     },
   ];
 
+
+
   return (
     <>
       <section className="py-8">
@@ -40,26 +44,42 @@ const Home = () => {
           </div>
 
           {/* Professional card and about card */}
+
           <div className="w-full mt-8 py-24 flex max-lg:flex-col items-center justify-between gap-24 ">
-            <div className="lg:w-8/12 space-y-20 ">
-              {supports.map((support, index) => (
-                <div
-                  key={index}
-                  className={`flex ${
-                    index % 2 === 1 ? "justify-end" : "justify-start"
-                  }`}
-                >
-                  <ProfessionalSupportCard
-                    index={index}
-                    title={support.title}
-                    description={support.description}
-                  />
-                </div>
-              ))}
-            </div>
-            <div className="lg:w-4/12 ">
+            <motion.div
+              className="lg:w-8/12 space-y-20 "
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={slideFromLeft}
+            >
+             
+                {supports.map((support, index) => (
+                  <div
+                    key={index}
+                    className={`flex ${
+                      index % 2 === 1 ? "justify-end" : "justify-start"
+                    }`}
+                  >
+                    <ProfessionalSupportCard
+                      index={index}
+                      title={support.title}
+                      description={support.description}
+                    />
+                  </div>
+                ))}
+            
+            </motion.div>
+          
+              <motion.div
+                    className="lg:w-4/12 "
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    variants={slideFromRight}
+                  >
               <AboutCard />
-            </div>
+            </motion.div>
           </div>
         </div>
 

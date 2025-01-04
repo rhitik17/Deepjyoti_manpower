@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex gap-x-4 lg:gap-x-6 font-semibold font-inter relative">
+        <ul className="hidden md:flex gap-x-4 lg:gap-x-6 font-semibold font-inter relative ">
           <li>
             <Link to={"/"} className={isActive("/")}>
               Home
@@ -55,28 +55,32 @@ const Navbar = () => {
             <Link to={"/about-us"} className={isActive("/about-us")}>
               About Us
             </Link>
-            {isDropdownOpen && (
-              <ul className="absolute left-0 bg-white shadow-lg rounded-md p-2 w-48">
-                <li>
-                  <Link
-                    to={"/about-us/company-profile"}
-                    className="block px-4 py-2 text-neutral-blue hover:text-primary-purple"
-                  >
-                    Company Profile
-                  </Link>
-
-                  <li>
-                  <Link
-                    to={"/about-us/company-profile"}
-                    className="block px-4 py-2 text-neutral-blue hover:text-primary-purple"
-                  >
-                    Company Profile
-                  </Link>
-                </li>
-                </li>
-              </ul>
-            )}
+            <ul
+              className={`absolute left-[-50%] bg-white shadow-lg rounded-md p-2 w-60 transition-opacity duration-500 ${
+                isDropdownOpen
+                  ? "opacity-100 pointer-events-auto"
+                  : "opacity-0 pointer-events-none"
+              }`}
+            >
+              <li>
+                <Link
+                  to={"/about-us/company-profile"}
+                  className="block px-4 py-2 text-neutral-blue hover:text-primary-purple"
+                >
+                  Company Profile
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/about-us/government-license"}
+                  className="block px-4 py-2 text-neutral-blue hover:text-primary-purple"
+                >
+                  Government License
+                </Link>
+              </li>
+            </ul>
           </li>
+
           <li>
             <Link to={"/jobs"} className={isActive("/jobs")}>
               Job portal
@@ -120,9 +124,7 @@ const Navbar = () => {
             </li>
             <li className="w-full pr-10">
               <button
-                onClick={() =>
-                  setIsMobileDropdownOpen(!isMobileDropdownOpen)
-                }
+                onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
                 className=" flex gap-x-4 items-center justify-between w-full text-left"
               >
                 About Us

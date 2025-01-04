@@ -2,7 +2,7 @@ import React from "react";
 
 const JobCategoryCard = ({ icon, name, jobs }) => {
   return (
-    <div className="h-72 bg-primary-web rounded-2xl shadow border-4  border-primary-web/40 text-white flex-col justify-center items-center gap-10 inline-flex cursor-pointer hover:scale-110 hover:bg-primary-web hover:text-primary-yellow transition-all ease-in-out duration-800 group">
+    <div className="h-72 bg-primary-web rounded-2xl shadow border-4  border-primary-web/40 text-white flex-col justify-center items-center gap-10 inline-flex cursor-pointer hover:scale-110 hover:bg-primary-web hover:text-primary-yellow transition-all ease-in-out duration-1000 group">
       <div className="w-10 h-10 justify-center items-center inline-flex text-2xl">
         {icon}
       </div>

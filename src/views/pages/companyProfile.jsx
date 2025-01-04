@@ -53,7 +53,7 @@ const CompanyProfile = () => {
         {companyData.map((item, index) => (
           <div
             key={index}
-            className="flex bg-primary-web flex-col space-y-2 p-4 bg-primary-light rounded-lg shadow-md hover:scale-105"
+            className="flex bg-primary-web flex-col space-y-2 p-4 bg-primary-light rounded-lg shadow-md hover:scale-105 transition-transform duration-500"
           >
             <h3 className="text-primary-yellow text-lg font-semibold">
               {item.label}

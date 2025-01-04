@@ -12,3 +12,14 @@ export const getPostStatus = (createdDate) => {
     return `${dayDifference} day${dayDifference > 1 ? "s" : ""} ago`;
   }
 };
+
+
+export const slideFromLeft = {
+  hidden: { opacity: 0, x: -300 },
+  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+};
+
+export const slideFromRight = {
+  hidden: { opacity: 0, x: 300 },
+  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+};

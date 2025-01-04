@@ -4,6 +4,7 @@ import AboutUs from "./views/pages/aboutus.jsx";
 import Advertisement from "./views/pages/advertisement.jsx";
 import CompanyProfile from "./views/pages/companyProfile.jsx";
 import ContactUs from "./views/pages/contactus.jsx";
+import GovernmentLicense from "./views/pages/governmentlicense.jsx";
 import Home from "./views/pages/home.jsx";
 import Jobs from "./views/pages/jobs.jsx";
 import RecruitmentProcess from "./views/pages/recruitmentprocess.jsx";
@@ -14,6 +15,8 @@ const routeObjs = {
     { path: "/", component: Home },
     { path: "/about-us", component: AboutUs },
     { path: "/about-us/company-profile", component: CompanyProfile },
+    { path: "/about-us/government-license", component: GovernmentLicense },
+
 
     { path: "/contact-us", component: ContactUs },
     { path: "/services", component: Services },
