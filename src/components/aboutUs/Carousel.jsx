@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import ChairmanWords from "./ChairmanWords"; // Import the ChairmanWords component
+import Autoplay from 'embla-carousel-autoplay';
+import { Carousel, CarouselSlide } from "@mantine/carousel";
 
 const data = [
   {
@@ -28,6 +30,8 @@ const data = [
 function Slider() {
   const galleryRef = useRef(null);
   const [itemWidth, setItemWidth] = useState(0);
+  const autoplay = useRef(Autoplay({ delay: 2000 }));
+
 
   // Set item width dynamically
   useEffect(() => {
@@ -55,7 +59,9 @@ function Slider() {
   }, [itemWidth]); // Re-run when the itemWidth changes
 
   return (
-    <div className="w-full bg-primary-web overflow-hidden">
+    <>
+    {/* <div className="w-full bg-primary-web overflow-hidden">
+      
       <div
         ref={galleryRef}
         className="flex space-x-4 w-full scrollbar-hide"
@@ -67,7 +73,28 @@ function Slider() {
           </div>
         ))}
       </div>
-    </div>
+    </div> */}
+       <Carousel
+      withIndicators
+      withControls
+      classNames={{controls:"-mx-[60px]",
+      }
+    }
+      loop
+      plugins={[autoplay.current]}
+      onMouseEnter={autoplay.current.stop}
+      onMouseLeave={autoplay.current.reset}
+    >
+      {data.map(({ id, image, quote, name, title }) => (
+          <CarouselSlide key={id} className="">
+            <ChairmanWords image={image} quote={quote} name={name} title={title} />
+          </CarouselSlide>
+ ))}
+      
+      {/* ...other slides */}
+    </Carousel>
+    </>
+
   );
 }
 
