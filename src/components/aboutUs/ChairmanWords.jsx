@@ -3,8 +3,8 @@ import React from "react";
 const ChairmanWords = ({ image, quote, name, title }) => {
   return (
     <div className="w-full flex flex-col md:flex-row justify-center md:justify-start items-center max-md:space-y-10 gap-10">
-      <div className="md:w-3/12 lg:w-4/12 flex items-center">
-        <img className="rounded-lg" src={image} alt="Placeholder" />
+      <div className=" md:w-3/12 lg:w-4/12 flex items-center">
+        <img className="rounded-lg  " src={image} alt="Placeholder" />
       </div>
 
       <div className="md:w-9/12 lg:w-8/12 flex flex-col justify-start items-start gap-8">

@@ -40,7 +40,7 @@ function Slider() {
        <Carousel
       withIndicators
       withControls
-      classNames={{controls:"-mx-[60px]",
+      classNames={{controls:"-mx-[20px] md:-mx-[40px] xl:-mx-[60px]",
       }
     }
       loop
