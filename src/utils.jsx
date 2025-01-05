@@ -15,11 +15,11 @@ export const getPostStatus = (createdDate) => {
 
 
 export const slideFromLeft = {
-  hidden: { opacity: 0, x: -300 },
+  hidden: { opacity: 0, x: -100 },
   visible: { opacity: 1, x: 0, transition: { duration: 1 } },
 };
 
 export const slideFromRight = {
-  hidden: { opacity: 0, x: 300 },
+  hidden: { opacity: 0, x: 100 },
   visible: { opacity: 1, x: 0, transition: { duration: 1 } },
 };

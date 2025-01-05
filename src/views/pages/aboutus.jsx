@@ -118,7 +118,7 @@ const AboutUs = () => {
 
       {/* Chairman's statement */}
       <div className="bg-primary-green px-4 md:px-8 lg:px-10 xl:px-20 py-8 xl:py-20">
-        {/* <ChairmanWords /> */}
+      
         <Slider/>
       </div>
 

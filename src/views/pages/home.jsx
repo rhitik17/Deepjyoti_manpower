@@ -50,7 +50,7 @@ const Home = () => {
               className="w-full lg:w-8/12 space-y-20 "
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.2 }}
               variants={slideFromLeft}
             >
              
