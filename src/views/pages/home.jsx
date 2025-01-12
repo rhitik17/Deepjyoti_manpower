@@ -57,7 +57,7 @@ const Home = () => {
                 {supports.map((support, index) => (
                   <div
                     key={index}
-                    className={`flex ${
+                    className={`flex  ${
                       index % 2 === 1 ? "justify-end" : "justify-start"
                     }`}
                   >

@@ -5,10 +5,9 @@ import TopCompanies from "../../components/jobs/TopCompany";
 import Testimonials from "../../components/jobs/TestimonialsFromCustomer";
 import BannerSection from "../../components/jobs/Banner";
 import { jobData } from "../../data/jobData";
-import categories from "../../data/browseByCategory";
 import companies from "../../data/Companies";
 import testimonials from "../../data/testimonialsFromCustomers";
-
+import categories from "../../data/browseByCategory";
 const Jobs = () => {
   return (
     <div className="flex flex-col ">

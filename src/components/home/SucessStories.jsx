@@ -4,7 +4,7 @@ import React from "react";
 const TestimonialCard = ({ image, name, position, testimonial }) => {
   return (
     <div className="w-full min-h-52 p-8 bg-primary-web shadow-lg flex flex-col gap-6 rounded">
-      <p className="text-white text-sm leading-snug">{testimonial}</p>
+      <p className="text-white text-normal ">{testimonial}</p>
       <div className="flex items-center gap-5">
         <img className="w-14 h-14 rounded-full" src={image} alt={`${name}'s avatar`} />
         <div className="flex flex-col">
@@ -22,20 +22,20 @@ const SuccessStories = () => {
     {
       image: "/images/plane.jpg",
       name: "Jerome Bell",
-      position: "Marketing Coordinator",
-      testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."
+      position: "Operations Manager",
+      testimonial: "Manpower Service Pvt. Ltd. provided us with a skilled workforce in record time. Their professionalism and commitment to quality are unmatched in the industry."
     },
     {
       image: "/images/plane.jpg",
       name: "Cody Fisher",
-      position: "President of Sales",
-      testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."
+      position: "HR Manager",
+      testimonial: "Thanks to Manpower Service Pvt. Ltd., we were able to streamline our recruitment process and onboard experienced professionals who perfectly fit our requirements."
     },
     {
       image: "/images/plane.jpg",
       name: "Robert Fox",
-      position: "Web Designer",
-      testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."
+      position: "Project Supervisor",
+      testimonial: "The team at Manpower Service Pvt. Ltd. ensured we had the right talent for our project. Their dedication and efficiency made all the difference in achieving our goals."
     },
   ];
 

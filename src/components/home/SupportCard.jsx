@@ -2,7 +2,7 @@ import React from "react";
 
 const ProfessionalSupportCard = ({ title, description, index }) => {
   return (
-    <div className="relative  min-h-[151px] px-6 py-6 bg-white shadow-md border border-black/10 flex flex-col items-start gap-2">
+    <div  className="relative  min-h-[151px] px-6 py-6 bg-white shadow-md border rounded-2xl border-black/10 flex flex-col items-start gap-2">
       {/* Circle with Number */}
       <div className="absolute top-[-20px] left-[-20px] w-14 h-14 flex items-center justify-center rounded-full bg-white  border border-black/10">
         <span className="text-4xl  font-inter text-primary-green">{index + 1}</span>
