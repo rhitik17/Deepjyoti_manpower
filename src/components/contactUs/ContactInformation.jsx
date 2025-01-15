@@ -3,7 +3,7 @@ import { configData as config } from "../../data/configData";
 
 const ContactInformation = () => {
   return (
-    <div className="w-full lg:h-[660px] rounded-xl flex flex-col items-start  space-y-10 bg-primary-web px-4 lg:px-16 py-12 ">
+    <div className="w-full lg:h-[560px] rounded-xl flex flex-col items-start  space-y-10 bg-primary-web px-4 lg:px-16 py-12 ">
       <div>
         <div className=" text-white text-2xl font-bold  leading-[38.40px] tracking-wide">
           Contact Information

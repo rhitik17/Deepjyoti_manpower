@@ -1,4 +1,4 @@
-export const configData = {
+export const  configData = {
   site_title: "sdfasdfasdf",
   social_links: {
     facebook_link: "https://fb.com",
