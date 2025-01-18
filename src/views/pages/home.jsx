@@ -9,6 +9,8 @@ import Insights from "../../components/home/Insights";
 import TrustedPartners from "../../components/home/TrustedPartners";
 import { motion } from "framer-motion";
 import { slideFromLeft, slideFromRight } from "../../utils";
+import RedTitleTextCard from "../../components/common/RedTitleTextCard";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const supports = [
@@ -28,8 +30,6 @@ const Home = () => {
         "We provide comprehensive customer support to ensure your satisfaction.",
     },
   ];
-
-
 
   return (
     <>
@@ -53,32 +53,47 @@ const Home = () => {
               viewport={{ once: true, amount: 0.2 }}
               variants={slideFromLeft}
             >
-             
-                {supports.map((support, index) => (
-                  <div
-                    key={index}
-                    className={`flex  ${
-                      index % 2 === 1 ? "justify-end" : "justify-start"
-                    }`}
-                  >
-                    <ProfessionalSupportCard
-                      index={index}
-                      title={support.title}
-                      description={support.description}
-                    />
-                  </div>
-                ))}
-            
+              {supports.map((support, index) => (
+                <div
+                  key={index}
+                  className={`flex  ${
+                    index % 2 === 1 ? "justify-end" : "justify-start"
+                  }`}
+                >
+                  <ProfessionalSupportCard
+                    index={index}
+                    title={support.title}
+                    description={support.description}
+                  />
+                </div>
+              ))}
             </motion.div>
-          
-              <motion.div
-                    className="w-full h-auto lg:w-4/12 "
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    variants={slideFromRight}
-                  >
-              <AboutCard />
+
+            <motion.div
+              className="w-full h-auto lg:w-4/12 "
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              variants={slideFromRight}
+            >
+
+              {/* about us card */}
+              <div className="w-full  flex flex-col  justify-center items-center lg:justify-start lg:items-start gap-10">
+                <RedTitleTextCard
+                  title={"About"}
+                  headline={"DeepJyoti manpower Service"}
+                  description="DeepJyoti Manpower Service provides reliable staffing solutions to meet diverse workforce needs."
+                />
+
+                {/* Button Section */}
+                <Link to={"/about-us"}>
+                  <div className="w-44 h-12 bg-primary-web flex items-center justify-center rounded-full cursor-pointer">
+                    <span className="text-primary-yellow text-xl font-bold font-roboto">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </div>
             </motion.div>
           </div>
         </div>
