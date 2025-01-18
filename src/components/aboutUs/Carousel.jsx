@@ -29,7 +29,7 @@ function Slider() {
           galleryRef.current.scrollLeft = 0;
         }
       }
-    });
+    },3000);
 
     return () => clearInterval(interval);
   }, [itemWidth]); // Re-run when the itemWidth changes
