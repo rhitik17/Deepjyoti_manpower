@@ -100,7 +100,7 @@ const AboutUs = () => {
         <MissionComponent />
       </div>
 
-      <div className="flex justify-center flex-wrap gap-10 px-4 md:px-8 lg:px-10 xl:px-20 py-8 xl:py-20">
+      {/* <div className="flex justify-center flex-wrap gap-10 px-4 md:px-8 lg:px-10 xl:px-20 py-8 xl:py-20">
         <MissionVisionServiceCard
           icon={TargetIcon}
           title="Mission"
@@ -114,15 +114,15 @@ const AboutUs = () => {
           description="Providing superior professional quality through an experienced staff to meet the actual needs of our client’s business in Egypt and the Gulf region."
           onClick={() => console.log("Card clicked!")}
         />
-      </div>
+      </div> */}
 
       {/* Chairman's statement */}
-      <div className="bg-primary-green px-4 md:px-8 lg:px-10 xl:px-20 py-8 xl:py-20">
+      <div className="bg-primary-green px-4 md:px-8 lg:px-10 xl:px-20 ">
       
         <Slider/>
       </div>
 
-      <div className="h-96"></div>
+      <div className="h-52"></div>
     </section>
   );
 };

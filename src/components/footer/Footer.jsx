@@ -14,9 +14,7 @@ const Footer = () => {
             className="w-full bg-white  self-center"
           />
           <p className="text-white text-lg font-normal text-justify font-Dm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            aliquet lacinia nulla ut laoreet. Quisque ultricies et tortor nec
-            laoreet.
+           {config?.description}
           </p>
           <p className=" text-white text-lg font-medium font-['DM Sans']">
             Social Media
@@ -67,8 +65,7 @@ const Footer = () => {
               <Link to="/services">Services</Link>
             </li>
             <li>Team Members</li>
-           
-            <li>Terms & Conditions</li>
+
           </ul>
         </div>
 
@@ -77,30 +74,28 @@ const Footer = () => {
             Links
           </h4>
           <ul className="text-white text-base font-normal font-dm-sans leading-7 space-y-3">
-           
             <li>
               <Link to="/recruitment-process">How It Works</Link>
             </li>
-            <li>My Cart</li>
+       
             <li>
               <Link to="/contact-us">Contact</Link>
             </li>
-           
           </ul>
         </div>
 
         {/* Right Section - Contact Information */}
         <div className="flex flex-col gap-4 md:gap-6 items-start ">
-          <h4 className="text-white text-xl font-medium uppercase font-inter">
+          <h4 className="text-white text-xl font-medium uppercase ">
             Contact Us
           </h4>
-          <div className="w-full text-white font-helvetica space-y-4">
+          <div className="w-full text-white  space-y-4">
             <p className="text-base flex gap-x-2">
               {" "}
               <img src="/images/location.svg" alt="" />
               {config.address ? config.address : "    Samakhusi-29, Kathmandu"}
             </p>
-            <p className="text-base flex overflow-auto  gap-x-2">
+            <p className="text-base flex flex-wrap  gap-x-2">
               {" "}
               <img src="/images/mail.svg" alt="" />
               {config.emails ? config.emails[0] : " info@alnooroverseas.com"}
