@@ -48,7 +48,7 @@ function Slider() {
         
       >
         {carouselData?.map((item, id) => (
-          <CarouselSlide key={id} >
+          <CarouselSlide key={id} className="flex items-center">
             <ChairmanWords data={item} />
           </CarouselSlide>
         ))}
