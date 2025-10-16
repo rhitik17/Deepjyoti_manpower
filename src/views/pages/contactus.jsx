@@ -25,7 +25,7 @@ const ContactUs = () => {
         <div className="w-full lg:w-7/12 xl:w-8/12   lg:h-[560px] px-2 md:px-0 ">
           {/* <ContactForm /> */}
 
-   {configData?.google_maps_link && (
+          {configData?.google_maps_link && (
             <iframe
               src={configData?.google_maps_link}
               title="Google Map"
@@ -40,7 +40,7 @@ const ContactUs = () => {
 
       {/* Faq section */}
       <div className="pt-16">
-        <FAQ/>
+        <FAQ />
       </div>
     </section>
   );

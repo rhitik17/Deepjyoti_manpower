@@ -7,7 +7,7 @@ import { carouselData } from "../../data/carouseldata";
 function Slider() {
   const galleryRef = useRef(null);
   const [itemWidth, setItemWidth] = useState(0);
-  const autoplay = useRef(Autoplay({ delay: 2000 }));
+  const autoplay = useRef(Autoplay({ delay: 4000 }));
 
   // Set item width dynamically
   useEffect(() => {
