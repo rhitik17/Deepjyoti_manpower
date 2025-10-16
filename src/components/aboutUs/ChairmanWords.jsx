@@ -15,9 +15,9 @@ const ChairmanWords = ({ data }) => {
       <div className="w-full md:w-9/12 lg:w-8/12 flex flex-col justify-start items-start gap-8">
         <div className="flex flex-col w-full justify-start items-center gap-12">
           <div className="text-white text-md lg:text-xl font-semibold">
-            <p className="pb-2 ">{data?.greeting}</p>
+            <p className="w-full pb-2 text-gray-900 text-base font-normal  ">{data?.greeting}</p>
             {data?.quote?.map((text, index) => (
-              <div key={index} className={`${index === 0 ? "pt-0" : "pt-4"}`}>
+              <div key={index} className={`${index === 0 ? "pt-0" : "pt-4"} text-gray-900 text-base font-normal text-justify leading-normal`}>
                 <p>{text}</p>
               </div>
             ))}

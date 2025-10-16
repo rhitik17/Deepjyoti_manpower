@@ -7,7 +7,6 @@ const JobCategoryCard = ({ category, icon, name, jobs }) => {
   const [opened, { open, close }] = useDisclosure(false);
   const isMobile = useMediaQuery("(max-width: 768px)");
 
- 
   return (
     <>
       <div
@@ -26,38 +25,37 @@ const JobCategoryCard = ({ category, icon, name, jobs }) => {
       </div>
 
       <Modal
-  opened={opened}
-  onClose={close}
-  title={`${category.name} Opportunities`}
-  styles={{
-    modal: {
-      border: "4px solid #00A859", // Apply the border directly to the modal box
-      borderRadius: "16px", // Optional: You can also add rounded corners
-    },
-    title: {
-      fontSize: "2rem",
-      color: "#6B3E9C", // Custom title color
-      fontWeight: "bold",
-    },
-  }}
-  size={isMobile ? "100%" : "70%"}
-  centered
->
-  <div className="p-10  rounded-xl">
-    <ul className="space-y-4">
-      {category.list?.map((item, index) => (
-        <li
-          key={index}
-          className="flex items-start gap-3 border-b pb-3 last:border-b-0 font-semibold text-lg"
-        >
-          <span className="text-primary-purple text-lg">•</span>
-          <span className="text-lg text-gray-700">{item}</span>
-        </li>
-      ))}
-    </ul>
-  </div>
-</Modal>
-
+        opened={opened}
+        onClose={close}
+        title={`${category.name} Opportunities`}
+        styles={{
+          modal: {
+            border: "4px solid #00A859", // Apply the border directly to the modal box
+            borderRadius: "16px", // Optional: You can also add rounded corners
+          },
+          title: {
+            fontSize: "2rem",
+            color: "#6B3E9C", // Custom title color
+            fontWeight: "bold",
+          },
+        }}
+        size={isMobile ? "100%" : "70%"}
+        centered
+      >
+        <div className="p-10  rounded-xl">
+          <ul className="space-y-4">
+            {category.list?.map((item, index) => (
+              <li
+                key={index}
+                className="flex items-start gap-3 border-b pb-3 last:border-b-0 font-semibold text-lg"
+              >
+                <span className="text-primary-purple text-lg">•</span>
+                <span className="text-lg text-gray-700">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Modal>
     </>
   );
 };
